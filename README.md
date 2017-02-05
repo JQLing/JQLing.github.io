@@ -1,2 +1,2 @@
-# jql.github.io
+# JQLing.github.io
 My Blog
