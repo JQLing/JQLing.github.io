@@ -1,0 +1,94 @@
+html{
+    
+    background-color: #fafafa;
+}
+.box{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 620px;;
+    height: 400px;
+/*    background: #cff;*/
+}
+h1{
+    padding: 4%;
+    border-bottom: 1px dashed #ccc;
+    text-align: center;
+    color: #222222;
+    font-size: 2.625em;
+}
+h1 span{
+    letter-spacing: 30px;
+}
+.main{
+    height: 56%;
+    margin-top: 10%;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix li{
+    float: left;
+    width: 24%;
+    margin-right: 40px;
+/*    background: #fff;*/
+    list-style: none;
+}
+.clearfix a{
+    display: block;
+    color: #888888;
+    text-decoration: none;
+    text-align: center;
+}
+.icon{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+}
+#blog img{
+    width: 118px;
+    height: 118px;
+    margin-top: -10px;
+}
+.title{
+    margin-top: 6px;
+    font-size: 0.75em;
+    font-family: "微软雅黑";
+    display: none;
+}
+#blog p{
+    margin-top: -1px;
+}
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    color: #888888;
+    text-align: center;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+/*
+footer a{
+    display: block;
+}
+*/
+footer img{
+    width: 14px;
+    height: 12px;
+    border: none;
+}
