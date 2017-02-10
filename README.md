@@ -1,2 +1,2 @@
-# 我的主页 <https://jqling.github.io/>
+## 我的[主页](https://jqling.github.io/)
 
