@@ -1,0 +1,150 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,p,div,img{
+	padding: 0; margin: 0;
+}
+img{border:none;}
+li{list-style: none}
+a{text-decoration: none;}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+}
+
+
+.resume{
+	width: 700px;
+	margin-left: 200px;
+	background-color: #52c3dd;
+	color: #f0f7e2;
+	font-size: 16px;
+	opacity: 0.8;
+	filter:alpha(opacity=50);
+}
+.header{
+	width: 700px;
+	height: 60px;
+}
+.application{
+	width: 200px;
+	height: 100%;
+	line-height: 3.75em;
+	font-size: 18px;
+	font-weight: normal;
+	margin-left: 34px;
+}
+.main{
+	width: 700px;
+/*	border-top: 1px solid #ea922b;*/
+	border-top: 2px solid #f0f7e2;
+}
+/* 选项卡 */
+.tab{
+	width: 100%;
+	height: 100px;
+}
+.tab_list{
+	float: left;
+	width: 200px;
+	height: 100px;
+	margin-left: 24px;
+}
+.tab_list a{
+	display: block;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: #f0f7e2;
+}
+.tab_list a:hover,.active{
+	background: #b04e64;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+/*选项卡内容*/
+
+/*个人简介*/
+.tab_content_list{
+	width: 620px;
+	height: 600px;
+	padding: 40px;
+}
+.personal_info{
+	width: 620px;
+	height: 200px;
+	line-height: 40px;
+	border-bottom: 3px solid #f0f7e2;
+}
+.personal_info_list{
+	float: left;
+	width: 310px;
+}
+.blog,.github{
+	color: #f0f7e2;
+}
+.introduce{
+	width: 620px;
+}
+.introduce_title{
+	margin: 16px 0;
+	font-size: 18px;
+	font-weight: normal;
+}
+.introduce p{
+	text-indent: 0.85cm;
+}
+/*技能*/
+.skills{
+	
+}
+.skills_con{
+	
+}
+.skills_con dt{
+	margin: 10px 0;
+}
+.skills_con dd{
+	
+}
+
+
+
+
+/*项目经验*/
+.project{
+	
+}
+.project_list{
+	
+}
+.project_title{
+	font-size: 18px;
+	font-weight: normal;
+}
+.project_personal_list{
+	
+}
+.project_personal dt{
+	margin-bottom: 10px;
+}
+.electronic{
+	color: #b04e64;
+}
+.project_personal dd {
+	margin-bottom: 6px;
+}
+.project_personal p{
+	text-indent: 32px;
+}
+.project_personal a{
+	color: #b04e64;
+}
