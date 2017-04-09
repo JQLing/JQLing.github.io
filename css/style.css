@@ -1,14 +1,24 @@
-html{
-    
-    background-color: #fafafa;
+body{ background-color: #fafafa;}
+.clearfix:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.show{
+    visibility: visible;
+}
+.hide{
+    visibility: hidden;
 }
 .box{
     position: absolute;
-    left: 25%;
+    left: 30%;
     top: 25%;
     width: 620px;;
     height: 400px;
-/*    background: #cff;*/
 }
 h1{
     padding: 4%;
@@ -17,61 +27,52 @@ h1{
     color: #222222;
     font-size: 2.625em;
 }
-h1 span{
+.name{
     letter-spacing: 30px;
 }
 .main{
+	width: 100%;
     height: 56%;
     margin-top: 10%;
 }
-.clearfix:after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    visibility: hidden;
-    clear: both;
-}
-.clearfix li{
-    float: left;
+
+#list li{
+	position: relative;
+	float: left;
     width: 24%;
-    margin-right: 40px;
-/*    background: #fff;*/
+	height: 140px;
+    margin: 0 20px;
     list-style: none;
 }
-.clearfix a{
+.link{
     display: block;
+	width: 100%;
+	height: 140px;
     color: #888888;
     text-decoration: none;
     text-align: center;
 }
 .icon{
-    position: relative;
+    position: absolute;
+	top:0;left: 0px;
     width: 100px;
     height: 100px;
     border: none;
     border-radius: 50%;
 }
-#blog img{
-    width: 118px;
+.blog{
+	width: 118px;
     height: 118px;
     margin-top: -10px;
 }
 .title{
-    margin-top: 6px;
+	position: absolute;
+	top: 100px;
+	left: 35px;
     font-size: 0.75em;
     font-family: "微软雅黑";
-    display: none;
 }
-#blog p{
-    margin-top: -1px;
-}
-.show{
-    display: block;
-}
-.hidden{
-    display: none;
-}
+.blog_title{top:106px;left: 50px;}
 footer{
     position: absolute;
     bottom: 0;
@@ -82,11 +83,6 @@ footer{
     font-size: 12px;
     font-family: "微软雅黑";
 }
-/*
-footer a{
-    display: block;
-}
-*/
 footer img{
     width: 14px;
     height: 12px;

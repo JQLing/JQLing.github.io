@@ -1,33 +1,30 @@
-window.onload = function(){
-    var oUl = document.getElementById('list');
-    var aLi = oUl.getElementsByTagName('li');
-    var aLink = oUl.getElementsByTagName('a');
-    var aImg = oUl.getElementsByClassName('icon');
-    var aCont= oUl.getElementsByTagName('p');
-    var oBlog = document.getElementById('blog');
-    var disT = 4;
 
-    for(var i=0;i<aImg.length;i++){
-        aImg[i].onmouseover = function(){
-//            aCont[i].addClass("show");alert('fdsaf');
-            aCont[i].className += "show";
-            this.offsetHeight = this.clientHeight - disT + 'px'; 
-            aCont[i].offsetHeight = aCont[i].clientHeight - disT + 'px';
-        }
-        aImg[i].onmouseout = function(){
-            aCont[i].className+="hidden";
-            this.offsetHeight = this.clientHeight + disT + 'px';
-            aCont[i].offsetHeight = aCont[i].clientHeight + disT + 'px';
-        }
-    }
-    
-    
-    
-    
-    
-    
-}
-
+$(function(){
+	var aImg = $('.icon');
+	var aTit = $('.title');
+	var move = 16;
+	var second = 400;
+	var imgTop = aImg.eq(0).position().top;
+	var titleTop = aTit.eq(0).position().top;
+	
+	aImg.hover(function(){
+		var index = aImg.index($(this));
+		
+		aTit.eq(index).addClass('show').removeClass('hide');
+		aTit.eq(index).animate({top:titleTop-move},second);
+		$(this).animate({top:imgTop-move},second);
+		
+	},function(){
+		var index = aImg.index($(this));
+		
+		$(this).animate({top:imgTop},second);
+		aTit.eq(index).animate({top:titleTop},second,function(){
+			aTit.eq(index).addClass('hide').removeClass('show');
+		});
+		
+	});
+	
+});
 
 
 
