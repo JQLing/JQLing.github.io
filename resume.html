@@ -2,94 +2,85 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>简历</title>
+	<title>fullPage简历</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.min.css">
 	<link rel="stylesheet" href="css/resume.css">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/component.css">
 </head>
 <body>
-	<div class="resume">
-		<div class="header">
-			<h1 class="application">WEB for 前端工程师</h1>
+	<div id="fullpage" >
+		<div class="section section_personal clearfix">
+			<div class="personal clearfix">
+				<div class="logo">
+					<div class="logo_cont">
+						<img src="images/person.jpg" alt="head" class="logo_pic">
+						<p class="application">求职意向：前端工程师</p>
+					</div>
+				</div>
+				<div class="person">
+					<div class="info">
+						<h2 class="name">焦琦玲</h2>
+						<p class="signature">追求专业与卓越前端开发者</p>
+						<ul class="personInfo clearfix">
+							<li class="personTitle">姓名</li>
+							<li class="personTitle">性别</li>
+							<li>焦琦玲</li>
+							<li>女</li>
+							<li class="personTitle">专业</li>
+							<li class="personTitle">毕业时间</li>
+							<li>软件工程 本科</li>
+							<li>2018.7</li>
+							<li class="personTitle">手机 </li>
+							<li class="personTitle">邮箱</li>
+							<li>17839193046</li>
+							<li>2969304442@qq.com</li>
+						</ul>
+						<ul class="personLink clearfix">
+							<li class="personTitle">Blog</li>
+							<li class="personTitle">GitHub</li>
+							<li><a href=" https://jqling.github.io/blog/" title="blog" class="blog"> https://jqling.github.io/blog/</a></li>
+							<li><a href="https://github.com/JQLing" title="github" class="github">https://github.com/JQLing</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="introduce clearfix">
+				<div class="intro">
+						<h2 class="title">介绍 / 
+							<span class="title_eng">Intro</span>
+						</h2>
+						<p class="intro_txt">介绍一些个人基本情况</p>
+				</div>
+				<div class="intro_info">
+						<p>做事认真，热爱前端，喜欢优雅的代码，能够自主学习。</p>
+						<p>求知欲较强，喜欢研究碰到的技术问题，某个功能有轮子，却喜欢先造轮子，再分析别人的轮子。</p>
+						<p>能耐心分析问题和解决问题。</p>
+						<p>常逛网站：GitHub、掘金、SegmentFault、前端乱炖、开发者头条 ......</p>
+					
+				</div>
+			</div>
+			
 		</div>
-		<div class="main">
-<!--		选项卡列表-->
-			<ul class="tab clearfix">
-				<li class="tab_list"><a href="javascript:void(0);" class="active">个人简介</a></li>
-				<li class="tab_list"><a href="javascript:void(0);">技能</a></li>
-				<li class="tab_list"><a href="javascript:void(0);">项目</a></li>
-			</ul>
-<!--			选项卡内容-->
-			<div class="tab_content">
-				<div class="tab_content_list personal show">
-					<ul class="personal_info">
-						<li class="personal_info_list">姓名：焦琦玲</li>
-						<li class="personal_info_list">学校：安阳工学院</li>
-						<li class="personal_info_list">专业：软件工程 本科</li>
-						<li class="personal_info_list">毕业时间：2018.7</li>
-						<li class="personal_info_list">手机：17839193046</li>
-						<li class="personal_info_list">个人博客： 
-							<a href="https://jqling.github.io/blog/" class="blog" title="blog" target="_blank">https://jqling.github.io/blog/</a>
-						</li>
-						<li class="personal_info_list">邮箱：2969304442@qq.com</li>
-						<li class="personal_info_list">GitHub： 
-							<a href="https://github.com/JQLing" class="github" title="github" target="_blank">https://github.com/JQLing</a>
-						</li>
-					</ul>
-					<ul class="introduce">
-						<li>
-							<h2 class="introduce_title">自我简介</h2>
-							<p>我是一个做事认真的人，热爱前端，喜欢优雅的代码，能够自主学习。</p>
-							<p>我求知欲较强，喜欢研究碰到的技术问题，某个功能有轮子，却喜欢先造轮子，再分析别人的轮子。</p>
-							<p>我能耐心分析问题和解决问题。</p>
-							<p>常逛网站：GitHub、掘金、SegmentFault、前端乱炖、开发者头条 ......</p>
-						</li>
-						<li>
-							<h2 class="introduce_title">兴趣爱好</h2>
-							<p>喜欢一大帮人打打羽毛球或乒乓球。</p>
-							<p>喜欢溜旱冰。</p>
-						</li>
-					</ul>
-				</div>
-				<div class="tab_content_list skills hide">
-					<dl class="skills_con">
-						<dt>核心技能</dt>
-						<dd>精通 html+css+javascript，代码兼容各主流浏览器</dd>
-						<dd>熟悉 HTML5、CSS3</dd>
-						<dd>掌握 PS切图、图片拼接技术</dd>
-						<dd>熟练使用 jQuery、Bootstrap框架</dd>
-						<dd>了解AngularJs框架</dd>
-						<dd></dd>
-						<dd>熟悉 Node.js及其标准模块，熟悉异步编程。</dd>
-						<dd>熟练使用版本控制工具git</dd>
-						<dd>关注新技术，熟悉ES6</dd>
-						
-						<dt>知识技能</dt>
-						<dd>div + css + javascript</dd>
-						<dd>html5 + css3</dd>
-						<dd>Jquery 框架</dd>
-						<dd>AngularJs 1.X 框架</dd>
-						<dd>Bootstrap</dd>
-						<dd>sass</dd>
-						<dd>Node.js + Express + MongoDB + Mongoose</dd>
-						<dd>SEO</dd>
-						<dd></dd>
-						<dd></dd>
-						
-						<dt>其他技能</dt>
-						<dd>熟练Web标准，对表现与数据的分离，html的语义化有深刻的理解</dd>
-						<dd>理解 TCP/IP、HTTP、WebSocket通讯协议</dd>
-						<dd>熟悉 Linux，掌握常见的命令</dd>
-						<dd>有较好的沟通能力和团队合作精神</dd>
-						<dd>能够快速掌握新的技术和知识</dd>
-						<dd></dd>
-					</dl>
-				</div>
-				<div class="tab_content_list project hide">
-					<div class="project_list ">
-						<h2 class="project_title">个人项目</h2>
-						<div class="project_personal">
-							<dl class="project_personal_list">
-								<dt class="electronic">仿淘宝电商系统</dt>
-								<dd>涉及技术：
+		<div class="section">
+			<div class="project">
+				<h2 class="title">项目经验 / 
+					<span class="title_eng">Experience</span>
+				</h2>
+				<p class="intro_txt">近期主要做过的一些项目</p>
+			</div>
+			<div class="container">
+				<header class="clearfix">
+				<h1>个人项目</h1>
+			</header>	
+				<div class="main">
+				<ul class="cbp_tmtimeline">
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>3/10/13</span> <span>18:30</span></time>
+						<div class="cbp_tmicon cbp_tmicon-phone"></div>
+						<dl class="cbp_tmlabel project_personal">
+							<dt class="electronic">仿淘宝电商系统</dt>
+							<dd>涉及技术：
 									<p>前台：html + css + jQuery + AngularJs </p>
 									<p>后台：Node.js + Express + MongoDB + Mongoose</p>
 								</dd>
@@ -107,27 +98,26 @@
 								<dd>个人收获：
 								<p>深刻理解前后台数据交互、对 Cookie 和 Session 的运用和区别、加强对后台的运用。项目问题的出现使我分析问题更加准确，解决问题的方法更加有效。</p>
 								</dd>
-							</dl>
-						</div>
-					</div>
-					
-				</div>
+						</dl>
+					</li>
+				</ul>
+			</div>
 			</div>
 		</div>
+		<div class="section">
+			<div class="skills">
+				<h2 class="title">技能 / 
+					<span class="title_eng">Skills</span>
+				</h2>
+				<p class="intro_txt">我所掌握的技术栈</p>
+			</div>
+			<div class="skills_info"></div>
+		</div>
 	</div>
-	
 	<script src="js/jquery.min.js"></script>
-	<script>
-		$(function(){
-			var aTabList = $('.tab a');
-			var aTabCon = $('.tab_content_list');
-			
-			aTabList.click(function(){
-				var index = aTabList.index(this);
-				$(this).addClass('active').parent().siblings().find('a').removeClass('active');
-				aTabCon.eq(index).addClass('show').removeClass('hide').siblings().removeClass('show').addClass('hide');
-			});
-		});
-	</script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/resume.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 </body>
 </html>
