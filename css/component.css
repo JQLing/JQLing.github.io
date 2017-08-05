@@ -186,14 +186,11 @@
 		margin: -55px 5px 0 0px;
 	}	
 }
-
-
-
 .project_personal dt{
 	margin-bottom: 10px;
 }
 .electronic{
-	color: #b04e64;
+	color: #ffcc00;
 }
 .project_personal dd {
 	margin-bottom: 6px;
@@ -202,5 +199,5 @@
 	text-indent: 32px;
 }
 .project_personal a{
-	color: #b04e64;
+	color: #ffcc00;
 }
