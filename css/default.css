@@ -38,7 +38,7 @@ a:hover {
 	margin: 0 auto;
 	padding: 0 1.875em 3.125em;
 }
-
+.main{margin: 0;}
 .container > header {
 	padding: 2.875em 1.875em 1.875em;
 }
