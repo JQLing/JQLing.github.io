@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/component.css">
 </head>
 <body>
-	<div id="fullpage" >
+	<div id="fullpage">
+	  <div class="sections">
 		<div class="section section_personal clearfix">
 			<div class="personal clearfix">
 				<div class="logo">
@@ -20,8 +21,10 @@
 				</div>
 				<div class="person">
 					<div class="info">
+					 <div class="user">
 						<h2 class="name">焦琦玲</h2>
 						<p class="signature">追求专业与卓越前端开发者</p>
+					 </div>
 						<ul class="personInfo clearfix">
 							<li class="personTitle">姓名</li>
 							<li class="personTitle">性别</li>
@@ -30,11 +33,11 @@
 							<li class="personTitle">专业</li>
 							<li class="personTitle">毕业时间</li>
 							<li>软件工程 本科</li>
-							<li>2018.7</li>
+							<li>2018.6</li>
 							<li class="personTitle">手机 </li>
 							<li class="personTitle">邮箱</li>
-							<li>17839193046</li>
-							<li>2969304442@qq.com</li>
+							<li>178 3919 3046</li>
+							<li>jqling970@163.com</li>
 						</ul>
 						<ul class="personLink clearfix">
 							<li class="personTitle">Blog</li>
@@ -47,56 +50,68 @@
 			</div>
 			<div class="introduce clearfix">
 				<div class="intro">
+					<div class="intro_title">
 						<h2 class="title">介绍 / 
 							<span class="title_eng">Intro</span>
 						</h2>
 						<p class="intro_txt">介绍一些个人基本情况</p>
+					</div>
 				</div>
 				<div class="intro_info">
-						<p>做事认真，热爱前端，喜欢优雅的代码，能够自主学习。</p>
-						<p>求知欲较强，喜欢研究碰到的技术问题，某个功能有轮子，却喜欢先造轮子，再分析别人的轮子。</p>
-						<p>能耐心分析问题和解决问题。</p>
-						<p>常逛网站：GitHub、掘金、SegmentFault、前端乱炖、开发者头条 ......</p>
+					<p>有耐心，能在产品经理多次更改需求的情况下理智地处理问题。</p>
+					<p>能自主学习，热爱前端，喜欢优雅的代码，关注前端新技术。</p>
+					<p>求知欲旺盛，喜欢研究碰到的技术问题，喜欢挑战困难，能耐心分析问题和解决问题。</p>
+					<p>常逛网站：GitHub、掘金、SegmentFault、前端乱炖、开发者头条 ......</p>
+					<p>喜欢与人沟通，有很强的团队协作能力，具有强烈的责任心和集体荣誉感。</p>
 					
 				</div>
-			</div>
-			
+			</div>	
 		</div>
-		<div class="section">
+		<div class="section clearfix">
 			<div class="project">
+			  <div class="title_info">
 				<h2 class="title">项目经验 / 
 					<span class="title_eng">Experience</span>
 				</h2>
 				<p class="intro_txt">近期主要做过的一些项目</p>
+			  </div>
 			</div>
 			<div class="container">
-				<header class="clearfix">
-				<h1>个人项目</h1>
-			</header>	
 				<div class="main">
 				<ul class="cbp_tmtimeline">
 					<li>
-						<time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>3/10/13</span> <span>18:30</span></time>
+						<time class="cbp_tmtime" datetime="2017-02-06 18:30"><span>18:30</span><span>2017.2</span></time>
 						<div class="cbp_tmicon cbp_tmicon-phone"></div>
 						<dl class="cbp_tmlabel project_personal">
 							<dt class="electronic">仿淘宝电商系统</dt>
+							<dd>责任描述：
+									<p>独立完成从前台到后台开发。</p>
+								</dd>
 							<dd>涉及技术：
 									<p>前台：html + css + jQuery + AngularJs </p>
 									<p>后台：Node.js + Express + MongoDB + Mongoose</p>
 								</dd>
 								<dd>项目描述：
-									<p>前台实现完整电商流程所有页面，用jQuery实现页面特效以及跟后台数据交互，例如放大镜、购物车商品数量+- 等等。表单验证用了AngularJs。页面兼容Chrome、Firefox、IE7+、Opera 等浏览器。</p>
-									<p>后台用node的express框架实现注册、登录、选择商品的信息并将其存入数据库、加入购物车、购物车结算、注销用户等其他功能。模板引擎用的ejs。</p>
-									<p>项目技术难点是购物车部分，仿淘宝商品选中/未选中状态用的是label不同背景图，这就造成了全/单/多选、选中店铺名全选店铺下所有商品选中/未选中/取消选中状态商品+- 改变结算值的复杂度，通过jQuery对代码不断更改，最终实现购物车功能。</p>
+									<p>前台：</p>
+									<p>1.实现完整电商流程所有静态页面。</p>
+									<p>2.用jQuery实现页面特效和动态数据，如定时自动轮播、放大镜、分页插件、购物车商品数量+-、购物车结算等等。</p>
+									<p>3.用Ajax实现和后台数据交互，例如商品加入购物车向后台发送商品信息等等。</p>
+									<p>4.用户注册登录表单验证使用AngularJS。</p>
+									<p>5.页面兼容Chrome、Firefox、IE7+ 等主流浏览器。</p>
+									<p>后台：</p>
+									<p>1.Node的Express框架实现用户登录、用户注册、登出注销用户功能。使用session存储用户状态。</p>
+									<p>2.Express框架实现数据库的增删查功能，被选商品的信息加入数据库且商品显示在购物车、购物车中删除商品、从数据库取数据，将数据渲染到页面。</p>
+									<p>使用EJS模板引擎。</p>
 								</dd>
-								<dd>责任描述：
-									<p>独立完成从前台到后台开发。</p>
-								</dd>  
+								<dd>开发遇到的问题和解决方案：
+									<p>1. 商品数量+-，判断类名是否为increase或decrease。</p>
+									<p>2. 逻辑很重要。未选中商品，商品数量+-，只修改金额；选中商品，商品数量+-，计算金额，计算商品件数，计算合计。选中店铺，全选店铺下所有商品。选中店铺中所有的商品，选中店铺。取消选中的商品，修改商品件数，合计。若取消店铺，取消店铺所有商品。取消店铺所有商品，取消店铺。</p>
+								</dd> 
 								<dd>项目地址：
-								<a href="https://github.com/JQLing/Online-retailers" title="仿淘宝电商系统" target="_blank">https://github.com/JQLing/Online-retailers</a>
+								<a class="link_address" href="https://github.com/JQLing/Online-retailers" title="仿淘宝电商系统" target="_blank">https://github.com/JQLing/Online-retailers</a>
 								</dd>
 								<dd>个人收获：
-								<p>深刻理解前后台数据交互、对 Cookie 和 Session 的运用和区别、加强对后台的运用。项目问题的出现使我分析问题更加准确，解决问题的方法更加有效。</p>
+								<p>巩固了前端基础知识html,css,javascript的练习。对页面整体规划，合理布局。提高了代码复用性，使用了有语义的标签、运用了切图，拼图技术。更加清晰地认识前后台数据交互。</p>
 								</dd>
 						</dl>
 					</li>
@@ -104,15 +119,85 @@
 			</div>
 			</div>
 		</div>
-		<div class="section">
+		<div class="section clearfix">
 			<div class="skills">
+			 <div class="title_info">
 				<h2 class="title">技能 / 
 					<span class="title_eng">Skills</span>
 				</h2>
 				<p class="intro_txt">我所掌握的技术栈</p>
+			 </div>
 			</div>
-			<div class="skills_info"></div>
+			<div class="skills_info">
+				<ul class="item_list clearfix">
+					<li class="item">
+						<p><span class="percent">90%</span>HTML/CSS</p>
+						<div class="progress">
+							<div class="progress-bar">
+								<span class="sr-only" style="width:90%"></span>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<p><span class="percent">80%</span>JavaScript</p>
+						<div class="progress">
+							<div class="progress-bar">
+								<span class="sr-only" style="width:80%"></span>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<p><span class="percent">70%</span>jQuery</p>
+						<div class="progress">
+							<div class="progress-bar">
+								<span class="sr-only" style="width:70%"></span>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<p><span class="percent">50%</span>Bootstrap</p>
+						<div class="progress">
+							<div class="progress-bar">
+								<span class="sr-only" style="width:50%"></span>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<p><span class="percent">60%</span>Angular</p>
+						<div class="progress">
+							<div class="progress-bar">
+								<span class="sr-only" style="width:60%"></span>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<p><span class="percent">40%</span>NodeJS</p>
+						<div class="progress">
+							<div class="progress-bar">
+								<span class="sr-only" style="width:40%"></span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="skills_list">
+					<li>精通HTML/CSS、DIV+CSS布局，对W3C标准和Web语义化有充分的理解。</li>
+					<li>精通JavaScript，熟练使用jQuery、Ajax技术。</li>
+					<li>能够根据页面设计效果图（PSD）熟练完成切图。</li>
+					<li>熟练使用Bootstrap3。</li>
+					<li>掌握前端MVC框架Angular</li>
+					<li>熟悉前端新技术ES6，TypeScript</li>
+					<li>了解前端自动化工具Webpack</li>
+					<li>了解CSS预编译器Less</li>
+					<li>熟悉NodeJS及其标准模块</li>
+					<li>熟练使用版本控制工具Git</li>
+					<li>熟悉 Linux环境，掌握常见的命令</li>
+					<li>有良好的沟通能力和团队合作精神</li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
 		</div>
+	   </div>
 	</div>
 	<script src="js/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
