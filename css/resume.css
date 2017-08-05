@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6,ul,ol,li,p,div,img,section{
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,p,div,img{
 	padding: 0; margin: 0;
 }
 img{border:none;}
@@ -12,24 +12,26 @@ a{text-decoration: none;}
     overflow: hidden;
     clear: both;
 }
-#fullpage{
-	font-size: 14px;color: #444;
-}
+html,body{width: 100%;overflow: hidden;}
+#fullpage,.sections,.section{width: 100%;position: relative;}
+#fullpage{height: 100%;font-size: 14px;color: #444;}
+.sections{height: 300%;}
+.section{height: 100%;}
 /*第一屏*/
 .personal{
 	width: 100%;
-/*	height: 66%;*/
+	height: 70%;
 }
 .introduce{
 	width: 100%;
-	height: 20%;
+	height: 30%;
 }
 .logo{
 	float: left;
 	display: table;
 	overflow: hidden;
 	width: 30%;
-	height: 600px;
+	height: 100%;
 	background-color: #f3f3f3;
 	text-align: center;
 }
@@ -40,22 +42,29 @@ a{text-decoration: none;}
 }
 .application{
 	color: #6cbfee;
+	animation: personal_info 1s ease-in-out 200ms forwards;
 }
 .logo_pic{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
 	margin-bottom: 10px;
+	animation: personal_info 1s ease-in-out 10ms forwards;
 }
 .person{
 	float: left;
 	width: 70%;
-	height: 600px;
-	padding-left: 5%;
+	height: 100%;
 	background-color: #eaeaea;
 }
 .info{
-	padding-top: 50px;
+	width: 95%;
+	height: 100%;
+	padding: 5%;
+}
+.user{
+	width: 100%;
+	animation: personal_info 1s ease-in-out 100ms forwards;
 }
 .name{
 	font-weight: normal;
@@ -74,6 +83,12 @@ a{text-decoration: none;}
 	line-height: 30px;
 	color: #111;
 }
+.personInfo li{
+	animation: personal_info 1s ease-in-out 300ms forwards;
+}
+.personLink li{
+	animation: personal_info 1s ease-in-out 600ms forwards;
+}
 .personTitle{
 	font-weight: 600;
 }
@@ -88,17 +103,35 @@ a{text-decoration: none;}
 .blog:hover,.github:hover{
 	text-decoration: underline;
 }
+@keyframes personal_info{
+	0%{
+		-webkit-transform: translateY(100%);
+		transform: translateY(100%);
+		opacity: 0;
+		filter:alpha(opacity=0);
+	},
+	60%{
+		opacity: 0;
+		filter:alpha(opacity=0);
+	},
+	100%{
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+		filter:alpha(opacity=100);
+	}
+}
 /*介绍*/
 .intro{
 	float: left;
 	width: 30%;
-	height: 200px;
-	padding: 60px 160px;
+	height: 100%;
 	text-align: center;
 	background-color: #eaeaea;
 }
+.intro_title{width: 100%;height: 50%;padding:10% 28%;}
 .title{
-	width: 170px;
+	width: 140px;
 	height: 40px;
 	line-height: 40px;
 	color: #333333;
@@ -107,7 +140,7 @@ a{text-decoration: none;}
 	font-weight: normal;
 }
 .title_eng{
-	width: 130px;
+	width: 30px;
 	font-weight: normal;
 	font-size: 14px;
 	font-style: italic;
@@ -121,7 +154,7 @@ a{text-decoration: none;}
 .intro_info{
 	float: left;
 	width: 70%;
-	height: 200px;
+	height: 100%;
 	padding: 2% 5%;
 	background-color: #f3f3f3;
 }
@@ -134,105 +167,83 @@ a{text-decoration: none;}
 .project{
 	float: left;
 	width: 30%;
-	height: 800px;
-	padding: 80px 160px; 
+	height: 100%;
 	background-color: #f3f3f3;
 }
 .container{
 	float: left;
 	width: 70%;
-	height: 800px;
+	height:100%;
 	background-color: #eaeaea;
 }
+.title_info{width: 100%; height: 10%;padding: 14% 28%;}
+.title_info .title{width: 100%;}
+.main{width: 90%;height: 100%;margin: 0;}
+/*.cbp_tmlabel dd{color: #111;}*/
+.link_address:hover{text-decoration: underline;}
+
 /*第三屏*/
 .skills{
 	float: left;
 	width: 30%;
-	height: 800px;
-	padding: 80px 160px; 
+	height: 100%;
 	background-color: #eaeaea;
 }
 .skills_info{
 	float: left;
 	width: 70%;
-	height: 800px;
-	padding-left: 5%;
+	height: 100%;
 	background-color: #f3f3f3;
-}	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+/*进度条*/
+.item_list{
+	width: 100%;
+	height: 40%;
+	padding-top: 10%;
+}
+.skills_list{
+	width: 100%;
+	height: 60%;
+}
+.item{
+	float: left;
+	width: 42%;
+	height: 20%;
+	padding-left: 8%;
+	
+}
+.item p{
+	font-size: 18px;
+	margin-bottom: 2%;
+}
+.percent{
+	display: inline-block;
+	padding-right: 10px;
+	color: #23abff;
+}
+.progress,
+.progress-bar,
+.sr-only {
+	height: 5px;
+	font-size: 0;
+	line-height: 0
+}
+.progress{
+	overflow:hidden;
+	width:350px;
+}
+.progress-bar{
+	width:100%;
+	background-color:#dbdbdb;
+}
+.sr-only{
+	display:inline-block;
+	background-color:#23abff;
+}
+/*技能描述*/
+.skills_list li{
+	width: 100%;
+	height: 6%;
+	padding-left: 10%;
+	font-size: 16px;
+}
